@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="43e6-0a94-b4db-217b" name="War Clan" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0368-930f-c4d8-7d2e" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="6035-fef6-891a-0281" name="Jarl" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-94bd-69be-368f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f395-04ee-3932-6b87" name="New CategoryLink" hidden="false" targetId="c641-ea3b-0cb3-a2a1" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7314-a082-9e55-eb16" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f4a-0f91-a704-3b63" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="70d1-675d-5cac-f86f" name="Ulfbert" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="96a1-ef89-f3e4-1f47" name="Ulfbert" hidden="false" targetId="8d1f-de9c-9cca-c9c4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="075a-a276-09aa-163f" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="075a-a276-09aa-163f" value="160.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
