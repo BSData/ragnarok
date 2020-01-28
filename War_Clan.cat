@@ -90,7 +90,7 @@
     </selectionEntry>
     <selectionEntry id="4c65-6e3f-351d-2448" name="Berserker" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="221e-029e-4df4-0d47" name="Berserker" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="221e-029e-4df4-0d47" name="Berserker" publicationId="81de-2783-487c-43ea" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">6</characteristic>
