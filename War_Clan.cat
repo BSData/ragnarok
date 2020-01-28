@@ -1,33 +1,381 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="43e6-0a94-b4db-217b" name="War Clan" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="0368-930f-c4d8-7d2e" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="43e6-0a94-b4db-217b" name="War Clan" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="0368-930f-c4d8-7d2e" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="6035-fef6-891a-0281" name="Jarl" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-94bd-69be-368f" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="b042-e3db-0953-f577" name="Jarl" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">3</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">3</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">2</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">3</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">1</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">3</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">2</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="f395-04ee-3932-6b87" name="New CategoryLink" hidden="false" targetId="c641-ea3b-0cb3-a2a1" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7314-a082-9e55-eb16" name="Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f4a-0f91-a704-3b63" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="70d1-675d-5cac-f86f" name="Ulfbert" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="96a1-ef89-f3e4-1f47" name="Ulfbert" hidden="false" targetId="8d1f-de9c-9cca-c9c4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="075a-a276-09aa-163f" value="65.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cca3-c657-59d3-bcc2" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="1244-0f93-cc81-8e33" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+        <entryLink id="fca5-e680-b8fe-f998" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
-        <cost name="pts" typeId="075a-a276-09aa-163f" value="160.0"/>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="160.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3d5e-5152-66ff-80e2" name="Bondi" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="148e-321c-e887-c427" name="Bondi" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">2</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">1</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">2</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">1</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">2</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">2</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8354-1ee2-7cd9-0345" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8ce3-faa7-232a-3969" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="f101-63a8-571f-99a8" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="5994-62f5-ccc8-fce8" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ddbe-01bc-baf7-68b0" name="Huskarl" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="0778-588e-33a7-11fc" name="Huskarl" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">3</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">0</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">3</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">2</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">3</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">2</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2623-9fc4-31eb-8495" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e78a-9cef-bf22-7c02" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="2db1-d291-e807-70d7" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="805e-97ed-0dc2-85ca" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4c65-6e3f-351d-2448" name="Berserker" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="221e-029e-4df4-0d47" name="Berserker" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">6</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">3</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">0</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">1</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">2</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">4</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">1</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="9346-1e64-9faa-c421" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="15ab-be58-2b27-7f5e" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="8dca-fe8d-11ef-58b9" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="4e9f-a370-647e-0ccc" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53d1-7d36-042c-d5a7" name="Skald" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1e1a-40ff-09d3-865e" name="Skald" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">2</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">1</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">2</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">1</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">2</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">3</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="31e9-5864-1b84-f8b7" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="07a3-bb51-ecec-ceb5" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="13db-9eb9-75be-5bce" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="5cee-2ced-84de-8f0d" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a315-50f4-f30e-ae04" name="Gothi" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e03b-fdb2-f196-4d0f" name="Gothi" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">2</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">0</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">2</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">1</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">3</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">3</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="b38c-f82f-78f4-b83b" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4c8c-7551-2cee-244b" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="99aa-1d41-53aa-594c" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="2521-32cf-b4f4-89d1" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77a6-07d9-db3b-6d65" name="Speider" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c7bd-8851-6db1-e4fc" name="Speider" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+          <characteristics>
+            <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
+            <characteristic name="SP" typeId="c2f6-3396-28d2-3768">6</characteristic>
+            <characteristic name="MA" typeId="341e-c5cb-c3fd-a902">1</characteristic>
+            <characteristic name="RA" typeId="dfd6-caa6-dae6-0aab">2</characteristic>
+            <characteristic name="DF" typeId="997c-e0eb-f3cd-fbb1">3</characteristic>
+            <characteristic name="RS" typeId="48f4-9aaf-07c3-5389">1</characteristic>
+            <characteristic name="DR" typeId="72fe-3c06-56e5-3b3b">2</characteristic>
+            <characteristic name="MN" typeId="a8bf-8ece-c0f2-de5c">2</characteristic>
+            <characteristic name="HP" typeId="a9d6-7c3d-ed79-664c">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4e92-714f-97e0-415b" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="212f-4112-42c7-03e3" name="Armor" hidden="false" collective="false" import="true" targetId="874f-c295-cc1a-bb92" type="selectionEntryGroup"/>
+        <entryLink id="3a16-30e1-43ba-32e0" name="Shield" hidden="false" collective="false" import="true" targetId="387a-b2a0-786e-a66e" type="selectionEntryGroup"/>
+        <entryLink id="80d1-bef4-1cd6-9e61" name="Weapons" hidden="false" collective="false" import="true" targetId="3c4b-f29c-62d5-40ef" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="70.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="b484-415c-ae5c-cc27" name="Heavy Armor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8e94-5b5e-321f-29fd" name="Heavy Armor" hidden="false" targetId="a822-7166-415f-122c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="757b-51fe-c160-5c78" name="Light Leathers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1f32-6ecc-fc87-9806" name="Light Leathers" hidden="false" targetId="9ccc-dd60-caa0-62c3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9866-5998-ddfe-f8d3" name="Scale/ Chain Armor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5c5b-63a3-3b6d-a126" name="Scale/Chain Armor" hidden="false" targetId="6aeb-9848-558d-1228" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2025-a6b7-a540-6799" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f7e3-295a-d31c-8d95" name="Shield" hidden="false" targetId="a8db-a560-54dc-5fcf" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6008-9704-77e6-fa08" name="Atgeir" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="88e5-b5ac-6b95-3c70" name="Atgeir" hidden="false" targetId="0d40-4a85-387d-1582" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a8b8-e9ba-dda4-da9e" name="Axe/Sword/Hammer" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b228-0fdd-3286-319d" name="Axe/Sword/Hammer" hidden="false" targetId="efaf-26c3-773b-c394" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a19-1916-e693-0b18" name="Club/Dagger" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="559a-990f-2eb7-1596" name="Club/Dagger" hidden="false" targetId="8929-c8df-524d-6b23" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4612-d656-d9f2-4693" name="Great Weapon" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8189-152a-f1df-e209" name="Great Weapon" hidden="false" targetId="eeb4-570e-09f2-3f4d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84f3-8914-8cf0-35f3" name="Scythe" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="892a-2cdf-3e96-c164" name="Scythe" hidden="false" targetId="45d7-628f-b835-667d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aeaa-5d12-20ba-6914" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="df0b-83bf-921b-c900" name="Spear" hidden="false" targetId="3b5a-c3d4-59d4-0922" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43a1-5f08-455c-d7eb" name="Ulfbert" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9ab8-a2a3-2348-e383" name="Ulfbert" hidden="false" targetId="8d1f-de9c-9cca-c9c4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="641b-b624-77ca-8442" name="Yew Bow" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="619d-b6cf-e043-e1c8" name="Yew Bow" hidden="false" targetId="e6ef-d160-e1f7-b485" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9fa3-64f2-a30f-f103" name="Throwing Axe/Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c164-3aad-9b20-3750" name="Throwing Axe/Hammer" hidden="false" targetId="8c77-fa1f-1061-37c8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cff-6b61-b583-e361" name="Throwing Spear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="edac-5b24-6292-65af" name="Throwing Spear" hidden="false" targetId="7d43-4f77-df05-931a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5caf-b4ea-85c5-78c4" name="Throwing Dagger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e3d9-e1b5-9b95-ae93" name="Throwing Dagger" hidden="false" targetId="ba50-84ff-c5c4-c05f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4fb-9b92-d417-ffd5" name="Sling" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6d47-f73e-5765-953a" name="Sling" hidden="false" targetId="4963-cf56-0579-65d7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="874f-c295-cc1a-bb92" name="Armor (Max 1)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bece-cabf-c86f-4a72" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="6a63-beb7-2e08-a4d2" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="b484-415c-ae5c-cc27" type="selectionEntry"/>
+        <entryLink id="7b08-88e7-2b3f-ad8c" name="Light Leathers" hidden="false" collective="false" import="true" targetId="757b-51fe-c160-5c78" type="selectionEntry"/>
+        <entryLink id="57df-b24b-c6a6-fdf8" name="Scale/ Chain Armor" hidden="false" collective="false" import="true" targetId="9866-5998-ddfe-f8d3" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3c4b-f29c-62d5-40ef" name="Weapons (Up to 3)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c1e-5f7c-748b-cbac" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="60f3-212f-3035-fa51" name="Ranged Weapons" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="110c-42e2-7416-9cde" name="Yew Bow" hidden="false" collective="false" import="true" targetId="641b-b624-77ca-8442" type="selectionEntry"/>
+            <entryLink id="a9fe-2f5b-19ef-5ae9" name="Throwing Axe/Hammer" hidden="false" collective="false" import="true" targetId="9fa3-64f2-a30f-f103" type="selectionEntry"/>
+            <entryLink id="0572-0cc4-6259-99f0" name="Throwing Dagger" hidden="false" collective="false" import="true" targetId="5caf-b4ea-85c5-78c4" type="selectionEntry"/>
+            <entryLink id="fc75-7fed-d958-4cf3" name="Throwing Spear" hidden="false" collective="false" import="true" targetId="9cff-6b61-b583-e361" type="selectionEntry"/>
+            <entryLink id="07db-d9e0-cc09-4e7f" name="Sling" hidden="false" collective="false" import="true" targetId="c4fb-9b92-d417-ffd5" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a221-429b-b759-4b0c" name="Melee Weapons" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3e06-83e5-b1aa-54e3" name="Atgeir" hidden="false" collective="false" import="true" targetId="6008-9704-77e6-fa08" type="selectionEntry"/>
+            <entryLink id="1665-3b86-e1f3-1666" name="Axe/Sword/Hammer" hidden="false" collective="false" import="true" targetId="a8b8-e9ba-dda4-da9e" type="selectionEntry"/>
+            <entryLink id="4d42-235b-f8e4-0a5e" name="Club/Dagger" hidden="false" collective="false" import="true" targetId="7a19-1916-e693-0b18" type="selectionEntry"/>
+            <entryLink id="e442-dca1-df9d-624f" name="Great Weapon" hidden="false" collective="false" import="true" targetId="4612-d656-d9f2-4693" type="selectionEntry"/>
+            <entryLink id="15d7-6bb9-7c30-bcb3" name="Scythe" hidden="false" collective="false" import="true" targetId="84f3-8914-8cf0-35f3" type="selectionEntry"/>
+            <entryLink id="a6ac-d007-5a8b-5f05" name="Spear" hidden="false" collective="false" import="true" targetId="aeaa-5d12-20ba-6914" type="selectionEntry"/>
+            <entryLink id="7864-f16a-10c4-e590" name="Ulfbert" hidden="false" collective="false" import="true" targetId="43a1-5f08-455c-d7eb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="387a-b2a0-786e-a66e" name="Shield (Max 1)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ae-d277-aa29-a908" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="bc30-44b4-7dfe-18f2" name="Shield" hidden="false" collective="false" import="true" targetId="2025-a6b7-a540-6799" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

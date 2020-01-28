@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="0368-930f-c4d8-7d2e" name="Ragnarok" revision="3" battleScribeVersion="2.03" authorName="Sigrid Kroon" authorContact="sigridkroonminis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="0368-930f-c4d8-7d2e" name="Ragnarok" revision="1" battleScribeVersion="2.03" authorName="Sigrid Kroon" authorContact="sigridkroonminis@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="81de-2783-487c-43ea" name="Ragnarok Core Rules"/>
   </publications>
   <costTypes>
-    <costType id="075a-a276-09aa-163f" name="pts" defaultCostLimit="-1.0"/>
+    <costType id="075a-a276-09aa-163f" name="Glory" defaultCostLimit="-1.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="d323-ffd5-ba38-2225" name="Base Statistics">
@@ -46,6 +46,16 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7694-355d-efc1-64cc" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b8-75fd-f2fb-551a" type="max"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="5434-fbb6-64c9-b1d3" name="Jarl" hidden="false" targetId="c641-ea3b-0cb3-a2a1" primary="false"/>
+        <categoryLink id="3a97-526e-2668-05fb" name="Warriors" hidden="false" targetId="aa00-3692-2674-7ee9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8879-e711-14b8-2712" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="32c0-d134-25fc-1d85" name="Demimortals" hidden="false" targetId="c8fc-16f9-d080-a42f" primary="false"/>
+        <categoryLink id="0ef4-2365-f467-2a73" name="Encounter Creatures" hidden="false" targetId="9af4-83b0-a055-047f" primary="false"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedProfiles>
@@ -113,6 +123,48 @@
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">3</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">Lethal</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e6ef-d160-e1f7-b485" name="Yew Bow" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">18</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3">No Shield while in use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4963-cf56-0579-65d7" name="Sling" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">0</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">12</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
+      </characteristics>
+    </profile>
+    <profile id="7d43-4f77-df05-931a" name="Throwing Spear" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">12</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
+      </characteristics>
+    </profile>
+    <profile id="8c77-fa1f-1061-37c8" name="Throwing Axe/Hammer" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">6</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
+      </characteristics>
+    </profile>
+    <profile id="ba50-84ff-c5c4-c05f" name="Throwing Dagger" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">1</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">6</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
+      </characteristics>
+    </profile>
+    <profile id="3b5a-c3d4-59d4-0922" name="Spear" publicationId="81de-2783-487c-43ea" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+      <characteristics>
+        <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
+        <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">MR</characteristic>
+        <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
   </sharedProfiles>
