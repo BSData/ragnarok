@@ -20,6 +20,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="0fa9-733c-9b49-30eb" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="613a-d28e-3587-9905" name="Teamwork" hidden="false" targetId="31db-f105-2801-65a2" type="rule"/>
+            <infoLink id="ea91-c21c-ead3-11f4" name="Tactician (x)" hidden="false" targetId="7695-b6eb-a5d0-c739" type="rule"/>
+            <infoLink id="6d41-6f2b-20a5-61c9" name="Combat Sense" hidden="false" targetId="910e-4f1c-248b-819c" type="rule"/>
+            <infoLink id="b33e-fbd7-0c66-e461" name="Weapon Master" hidden="false" targetId="6ae1-ab6f-cfb6-b735" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="f395-04ee-3932-6b87" name="New CategoryLink" hidden="false" targetId="c641-ea3b-0cb3-a2a1" primary="true"/>
       </categoryLinks>
@@ -76,6 +86,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="3873-eda6-2550-8456" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="b424-39ad-30af-f0fa" name="Brace" hidden="false" targetId="2af2-fcc1-e268-7ec2" type="rule"/>
+            <infoLink id="32bc-4ab3-2550-0e97" name="High Pain Threshold" hidden="false" targetId="d981-3fd1-6501-abef" type="rule"/>
+            <infoLink id="b11f-5ace-7ae2-9baf" name="Stalwart" hidden="false" targetId="6a9e-0d83-84bd-98ea" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="2623-9fc4-31eb-8495" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
       </categoryLinks>
@@ -104,6 +123,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="edb7-07aa-2886-a636" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="7e4c-b3ce-d275-b4d0" name="Berserker" hidden="false" targetId="6611-168d-e975-c7dd" type="rule"/>
+            <infoLink id="55bc-1fd6-dc35-a44b" name="Terrifying (x)" hidden="false" targetId="6621-8c83-6bf5-b6a2" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="9346-1e64-9faa-c421" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
       </categoryLinks>
@@ -132,6 +159,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="3edc-8106-232e-b74c" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="7bde-0eec-9f2a-6741" name="Tactician (x)" hidden="false" targetId="7695-b6eb-a5d0-c739" type="rule"/>
+            <infoLink id="980a-ac87-9351-40ec" name="Taunt (x)" hidden="false" targetId="a7c1-d573-2813-748d" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="31e9-5864-1b84-f8b7" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
       </categoryLinks>
@@ -160,6 +195,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="b1c5-1c9b-a6f7-efc9" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="80ac-791c-5ebd-925b" name="Healer (x)" hidden="false" targetId="a955-d4b8-f661-e1ce" type="rule"/>
+            <infoLink id="d3b4-abfe-5ed5-368d" name="Godspark Attuned" hidden="false" targetId="72d2-2fba-bb03-fae5" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="b38c-f82f-78f4-b83b" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
       </categoryLinks>
@@ -188,6 +231,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoGroups>
+        <infoGroup id="ca9a-214e-2007-a733" name="Special Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="bdf1-7926-f0da-e026" name="Concealment" hidden="false" targetId="4ce7-9686-36e4-2291" type="rule"/>
+            <infoLink id="0752-f74b-9997-aa4d" name="Stealth" hidden="false" targetId="0046-e21c-3ce3-8b06" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <categoryLinks>
         <categoryLink id="4e92-714f-97e0-415b" name="New CategoryLink" hidden="false" targetId="aa00-3692-2674-7ee9" primary="true"/>
       </categoryLinks>
