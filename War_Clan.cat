@@ -202,14 +202,6 @@
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="b484-415c-ae5c-cc27" name="Heavy Armor" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8e94-5b5e-321f-29fd" name="Heavy Armor" hidden="false" targetId="a822-7166-415f-122c" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="757b-51fe-c160-5c78" name="Light Leathers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1f32-6ecc-fc87-9806" name="Light Leathers" hidden="false" targetId="9ccc-dd60-caa0-62c3" type="profile"/>
@@ -224,6 +216,14 @@
       </infoLinks>
       <costs>
         <cost name="Glory" typeId="075a-a276-09aa-163f" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b484-415c-ae5c-cc27" name="Heavy Armor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8e94-5b5e-321f-29fd" name="Heavy Armor" hidden="false" targetId="a822-7166-415f-122c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2025-a6b7-a540-6799" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
