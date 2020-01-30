@@ -6,7 +6,7 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-94bd-69be-368f" type="max"/>
       </constraints>
       <profiles>
-        <profile id="b042-e3db-0953-f577" name="Jarl" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="b042-e3db-0953-f577" name="Jarl" publicationId="81de-2783-487c-43ea" page="64" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">3</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
@@ -45,7 +45,7 @@
     </selectionEntry>
     <selectionEntry id="3d5e-5152-66ff-80e2" name="Bondi" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="148e-321c-e887-c427" name="Bondi" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="148e-321c-e887-c427" name="Bondi" publicationId="81de-2783-487c-43ea" page="64" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
@@ -74,7 +74,7 @@
     </selectionEntry>
     <selectionEntry id="ddbe-01bc-baf7-68b0" name="Huskarl" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="0778-588e-33a7-11fc" name="Huskarl" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="0778-588e-33a7-11fc" name="Huskarl" publicationId="81de-2783-487c-43ea" page="65" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
@@ -112,7 +112,7 @@
     </selectionEntry>
     <selectionEntry id="4c65-6e3f-351d-2448" name="Berserker" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="221e-029e-4df4-0d47" name="Berserker" publicationId="81de-2783-487c-43ea" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="221e-029e-4df4-0d47" name="Berserker" publicationId="81de-2783-487c-43ea" page="65" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">6</characteristic>
@@ -149,7 +149,7 @@
     </selectionEntry>
     <selectionEntry id="53d1-7d36-042c-d5a7" name="Skald" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="1e1a-40ff-09d3-865e" name="Skald" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="1e1a-40ff-09d3-865e" name="Skald" publicationId="81de-2783-487c-43ea" page="66" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
@@ -186,7 +186,7 @@
     </selectionEntry>
     <selectionEntry id="a315-50f4-f30e-ae04" name="Gothi" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="e03b-fdb2-f196-4d0f" name="Gothi" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="e03b-fdb2-f196-4d0f" name="Gothi" publicationId="81de-2783-487c-43ea" page="66" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">5</characteristic>
@@ -223,7 +223,7 @@
     </selectionEntry>
     <selectionEntry id="77a6-07d9-db3b-6d65" name="Speider" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c7bd-8851-6db1-e4fc" name="Speider" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
+        <profile id="c7bd-8851-6db1-e4fc" name="Speider" publicationId="81de-2783-487c-43ea" page="67" hidden="false" typeId="d323-ffd5-ba38-2225" typeName="Base Statistics">
           <characteristics>
             <characteristic name="AP" typeId="a62b-c49a-e0d0-4859">2</characteristic>
             <characteristic name="SP" typeId="c2f6-3396-28d2-3768">6</characteristic>

@@ -283,108 +283,108 @@
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="9ccc-dd60-caa0-62c3" name="Light Leathers" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
+    <profile id="9ccc-dd60-caa0-62c3" name="Light Leathers" publicationId="81de-2783-487c-43ea" page="72" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
       <characteristics>
         <characteristic name="RS" typeId="d0f9-549f-f75e-1682">1</characteristic>
         <characteristic name="Special" typeId="3320-609d-d86d-a6c7"/>
       </characteristics>
     </profile>
-    <profile id="6aeb-9848-558d-1228" name="Scale/Chain Armor" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
+    <profile id="6aeb-9848-558d-1228" name="Scale/Chain Armor" publicationId="81de-2783-487c-43ea" page="72" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
       <characteristics>
         <characteristic name="RS" typeId="d0f9-549f-f75e-1682">2</characteristic>
         <characteristic name="Special" typeId="3320-609d-d86d-a6c7"/>
       </characteristics>
     </profile>
-    <profile id="a822-7166-415f-122c" name="Heavy Armor" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
+    <profile id="a822-7166-415f-122c" name="Heavy Armor" publicationId="81de-2783-487c-43ea" page="72" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
       <characteristics>
         <characteristic name="RS" typeId="d0f9-549f-f75e-1682">3</characteristic>
         <characteristic name="Special" typeId="3320-609d-d86d-a6c7"/>
       </characteristics>
     </profile>
-    <profile id="a8db-a560-54dc-5fcf" name="Shield" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
+    <profile id="a8db-a560-54dc-5fcf" name="Shield" publicationId="81de-2783-487c-43ea" page="72" hidden="false" typeId="de6a-67a2-7d33-91bb" typeName="Armor Stats">
       <characteristics>
         <characteristic name="RS" typeId="d0f9-549f-f75e-1682">-</characteristic>
         <characteristic name="Special" typeId="3320-609d-d86d-a6c7">+2 size when enemy tries to Overwhelm</characteristic>
       </characteristics>
     </profile>
-    <profile id="0d40-4a85-387d-1582" name="Atgeir" page="" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="0d40-4a85-387d-1582" name="Atgeir" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">3</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">MR</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">No shield when in use</characteristic>
       </characteristics>
     </profile>
-    <profile id="efaf-26c3-773b-c394" name="Axe/Sword/Hammer" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="efaf-26c3-773b-c394" name="Axe/Sword/Hammer" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="8929-c8df-524d-6b23" name="Club/Dagger" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="8929-c8df-524d-6b23" name="Club/Dagger" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">1</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="eeb4-570e-09f2-3f4d" name="Great Weapon" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="eeb4-570e-09f2-3f4d" name="Great Weapon" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">3</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">No shield when in use</characteristic>
       </characteristics>
     </profile>
-    <profile id="45d7-628f-b835-667d" name="Scythe" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="45d7-628f-b835-667d" name="Scythe" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">Savage, Cumbersome, No shield when in use</characteristic>
       </characteristics>
     </profile>
-    <profile id="8d1f-de9c-9cca-c9c4" name="Ulfbert" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="8d1f-de9c-9cca-c9c4" name="Ulfbert" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">3</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">ML</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">Lethal</characteristic>
       </characteristics>
     </profile>
-    <profile id="e6ef-d160-e1f7-b485" name="Yew Bow" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="e6ef-d160-e1f7-b485" name="Yew Bow" publicationId="81de-2783-487c-43ea" page="71" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">18</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3">No Shield while in use</characteristic>
       </characteristics>
     </profile>
-    <profile id="4963-cf56-0579-65d7" name="Sling" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="4963-cf56-0579-65d7" name="Sling" publicationId="81de-2783-487c-43ea" page="71" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">0</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">12</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="7d43-4f77-df05-931a" name="Throwing Spear" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="7d43-4f77-df05-931a" name="Throwing Spear" publicationId="81de-2783-487c-43ea" page="71" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">12</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="8c77-fa1f-1061-37c8" name="Throwing Axe/Hammer" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="8c77-fa1f-1061-37c8" name="Throwing Axe/Hammer" publicationId="81de-2783-487c-43ea" page="71" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">6</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="ba50-84ff-c5c4-c05f" name="Throwing Dagger" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="ba50-84ff-c5c4-c05f" name="Throwing Dagger" publicationId="81de-2783-487c-43ea" page="71" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">1</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">6</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
       </characteristics>
     </profile>
-    <profile id="3b5a-c3d4-59d4-0922" name="Spear" publicationId="81de-2783-487c-43ea" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
+    <profile id="3b5a-c3d4-59d4-0922" name="Spear" publicationId="81de-2783-487c-43ea" page="70" hidden="false" typeId="0779-50c8-ebb3-1089" typeName="Weapon Stats">
       <characteristics>
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">MR</characteristic>
