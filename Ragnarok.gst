@@ -39,6 +39,7 @@
     <categoryEntry id="aa00-3692-2674-7ee9" name="Warriors" hidden="false"/>
     <categoryEntry id="9af4-83b0-a055-047f" name="Encounter Creatures" hidden="false"/>
     <categoryEntry id="c8fc-16f9-d080-a42f" name="Demimortals" hidden="false"/>
+    <categoryEntry id="e432-0a79-0f40-69f8" name="Models" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="07d9-2d46-85fd-2843" name="Warclan" publicationId="81de-2783-487c-43ea" hidden="false">
@@ -55,6 +56,11 @@
         </categoryLink>
         <categoryLink id="32c0-d134-25fc-1d85" name="Demimortals" hidden="false" targetId="c8fc-16f9-d080-a42f" primary="false"/>
         <categoryLink id="0ef4-2365-f467-2a73" name="Encounter Creatures" hidden="false" targetId="9af4-83b0-a055-047f" primary="false"/>
+        <categoryLink id="e9bf-6e09-feaa-20d6" name="Models" hidden="false" targetId="e432-0a79-0f40-69f8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="07d9-2d46-85fd-2843" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a2d-ce16-cccd-c772" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -196,6 +202,84 @@
     </rule>
     <rule id="6ae1-ab6f-cfb6-b735" name="Weapon Master" publicationId="81de-2783-487c-43ea" page="251" hidden="false">
       <description>This model may re-roll one failed MA attempt per activation.</description>
+    </rule>
+    <rule id="95d5-8bfb-ebdd-971a" name="Affects Phasing" publicationId="81de-2783-487c-43ea" page="253" hidden="false">
+      <description>This model can hit models using the Special Ability Phasing without penalty</description>
+    </rule>
+    <rule id="647c-9c4a-e1be-8557" name="Aid (Stat) (x) - Status" hidden="false">
+      <description>Aid increases (Stat) by (x). Aid decreases by -1 at the end of each round until the (Stat) returns to its normal value.</description>
+    </rule>
+    <rule id="a013-58c7-0cf9-a6db" name="Arcing Fire" publicationId="81de-2783-487c-43ea" page="253" hidden="false">
+      <description>A model can use another friendly model&apos;s LOS to target an enemy with a Ranged Attack. Ranged Attacks made in this way suffer -1 RA.</description>
+    </rule>
+    <rule id="3123-ad42-0015-1e77" name="Blind (x) - Status" publicationId="81de-2783-487c-43ea" page="253" hidden="false">
+      <description>On a successful hit, before you roll and Resolve Damage, roll Blind ST (x) versus the target&apos;s MN. If you succeed, the target suffers-1 ML and -1 RN. Additionally, the target cannot use RA to target an enemy model more than 6&quot; away for the rest of the Round.</description>
+    </rule>
+    <rule id="2d86-2a11-c4ef-4c3e" name="Cumbersome" publicationId="81de-2783-487c-43ea" page="253" hidden="false">
+      <description>This weapon may only make one attack per round.</description>
+    </rule>
+    <rule id="45e6-277f-03c1-44f5" name="Dismantle (x)" publicationId="81de-2783-487c-43ea" page="253" hidden="false">
+      <description>Use this Attack Ability against mundane doors and traps. Roll Dismantle ST (x) versus DR. If you succeed, the target remains inactive for one Round per Success Stage you achieve.</description>
+    </rule>
+    <rule id="35ce-e8ef-a331-0dd4" name="Drain (Stat) (x) - Status" publicationId="81de-2783-487c-43ea" page="254" hidden="false">
+      <description>Drain decreases (Stat) by (x). Drain Increases by +1 at the end of each round until the (Stat) returns to its normal value. To resist the effects of Drain, the target model must roll RS versus Drain (x). will increase by the +1 in the End Phase of each round until it reaches normal.</description>
+    </rule>
+    <rule id="ed31-6190-37b2-f899" name="Fire (x) - Status" hidden="false">
+      <description>A model hit by this Attack receives a Fire marker. When this model activates, you may spend 1 AP to roll RS +2 versus the Fire ST (x) to attempt to put out the Fire. You can repeat this action until you successfully put out the Fire or run out of AP. If you succeed, remove the Fire marker. If a Fire marker remains on a model after its activation ends, you must roll RS versus Fire ST (x) or suffer +1 Damage.</description>
+    </rule>
+    <rule id="c48f-26e8-aae3-20d9" name="Hip Shot" publicationId="81de-2783-487c-43ea" page="254" hidden="false">
+      <description>This Model may use this RA for a Clash Action. They can initiate a Clash the moment an enemy model enters LOS and is within Attack range.</description>
+    </rule>
+    <rule id="d13b-ae06-c443-f674" name="Ice (x) - Status" publicationId="81de-2783-487c-43ea" page="254" hidden="false">
+      <description>A model hit by this attack receives an Ice marker. When the model activates later, roll Ice ST (x) versus RS. If you succeed, the model loses 1 AP per Success Stage. If you fail, the Ice marker is removed and the model suffers -1 SP until the end of the Round.</description>
+    </rule>
+    <rule id="dd3c-b37c-b4bd-58e9" name="Impaled (x) - Status" publicationId="81de-2783-487c-43ea" page="254-5" hidden="false">
+      <description>A model who suffers from the status Impaled cannot spend AP on SP-based actions or Special Abilities and is Prone for the purposes of Melee Attacks. While Impaled, the model must stay in base-to-base contact with the model (or Terrain Element or other object) that caused the Impaled status, even if that model or object moves. When you activate an Impaled model, you must spend 1 AP to roll DR versus Impaled ST (x). You may spend additional AP to make further attempts to free the model. If you succeed, the model is free and may act as normal with any remaining AP. If you fail, the model suffers -1 HP Damaged and it remains Impaled if it is not removed from play.</description>
+    </rule>
+    <rule id="bbab-c94e-971d-56d0" name="Knockdown (x)" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>On a successful hit, before you roll and Resolve Damage, roll Knockdown (x) versus Size. If you succeed, the target model is knocked Prone.</description>
+    </rule>
+    <rule id="5098-8c3e-0159-7ac0" name="Lethal" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>On a successful ST roll, each Success Stage you achieve does +1 Damage, instead of every 3 Success Stages.</description>
+    </rule>
+    <rule id="7cb7-44ca-92de-f094" name="Melee Arc" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>This model may spend 1 AP to roll one MA against all targets within MR of this Attack.</description>
+    </rule>
+    <rule id="c962-de9e-547f-a3ff" name="Point Blank" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>This model may use this RA while in melee combat with MR.</description>
+    </rule>
+    <rule id="6b5f-736a-15c3-7134" name="Psi" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>This Attack targets the enemy&apos;s MN instead of their DF. Roll Damage and Status effects versus the target&apos;s DR, instead of their RS.</description>
+    </rule>
+    <rule id="03c7-2834-ef37-ec43" name="Pull (x)" publicationId="81de-2783-487c-43ea" page="255" hidden="false">
+      <description>Roll Pull (x) versus target&apos;s Size. If you succeed, the target moves 2&quot; per Success stage directly toward the attacking model. If at any point while being Pulled the target hits another model or object, both the target and the model or object it hits suffer a ST hit equal to the remaining number of inches the target was suppose to Move.</description>
+    </rule>
+    <rule id="8747-0f30-8da2-fda5" name="Push (x)" publicationId="81de-2783-487c-43ea" page="255-6" hidden="false">
+      <description>Roll Push (x) versus target&apos;s Size. If you succeed, the target moves 2&quot; per Success Stage directly away from the attacking model. If at any point while being Pushed the target hits another model or object, both the target and the model or object it hits suffer a ST hit equal to the remaining number of inches the target was suppose to Move.</description>
+    </rule>
+    <rule id="523c-2795-357f-d8c3" name="Rapid Attack" publicationId="81de-2783-487c-43ea" page="256" hidden="false">
+      <description>This model may spend +1 AP to use this Attack 3 times in melee combat.</description>
+    </rule>
+    <rule id="acec-79b4-8c98-863a" name="Reload" publicationId="81de-2783-487c-43ea" page="256" hidden="false">
+      <description>This model starts the Scenario without a Reload marker. Once this model uses this Attack, it receives a Reload marker. While this model has a Reload marker it cannot use this attack. This model may spend 1 AP to remove the Reload marker.</description>
+    </rule>
+    <rule id="b3cf-fb39-1fc1-256d" name="Restrain (x)" publicationId="81de-2783-487c-43ea" page="256" hidden="false">
+      <description>When you hit an enemy model with this Attack, it receives a Restrain counter. A model with a Restrain marker has -2 SP and may not spend AP to Attack. The model may spend 1 AP during its activation to roll DR versus Restrain (x) to attempt to remove a Restrain marker. This attempt can be made multiple times.</description>
+    </rule>
+    <rule id="a59e-2eff-7849-1202" name="Savage" publicationId="81de-2783-487c-43ea" page="257" hidden="false">
+      <description>On a successful ST roll, every 2 Success Stages you achieve does +1 Damage, instead of every 3 Success Stages.</description>
+    </rule>
+    <rule id="40cc-e90b-0690-9024" name="Shock (x) - Status" publicationId="81de-2783-487c-43ea" page="257" hidden="false">
+      <description>On a successful hit, before you roll and Resolve Damage, roll Shock (x) versus RS. If you succeed, the target looses -1 AP, -1 ST, and -1 SP until the end of the Round.</description>
+    </rule>
+    <rule id="edd1-da49-80e8-788d" name="Stun (x) - Status" publicationId="81de-2783-487c-43ea" page="257-8" hidden="false">
+      <description>On a successful hit, before you roll and Resolve Damage, roll Stun (x) versus RS. If you succeed, the target loses -1 AP the next time it activates. Additionally, the target loses -1 AP for every 2 Success Stages you achieve, up to the target&apos;s maximum AP.</description>
+    </rule>
+    <rule id="980f-6535-de6f-692c" name="Toxin (x) - Status" publicationId="81de-2783-487c-43ea" page="258" hidden="false">
+      <description>Models hit but this Attack gain a Toxin counter. When this model activates, roll Toxin ST (x) versus RS. If you succeed, the Toxin counter remains, the model suffers -1 ML, and RN/Toxin ST. If you fail, the Toxin counter is removed.</description>
+    </rule>
+    <rule id="05a3-1c74-4863-3b35" name="Transfer (Stat) (x) - Status" publicationId="81de-2783-487c-43ea" page="258" hidden="false">
+      <description>Models hit bythis attack lose X from the corresponding Stat, this will be listed in the attack type, for the Round. The attacker gains X of the corresponding stat and adds it to their profile for the Round. In the End Phase of that round, the target model begins to regain their abilities, gaining +1 of the corresponding stat up to its maximum. The attacker beging to lose -1 from the corresponding stat down to its normal value from the End Phase of the initial Round. Transfer is not cumulative.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
