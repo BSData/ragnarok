@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="43e6-0a94-b4db-217b" name="War Clan" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="0368-930f-c4d8-7d2e" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType id="c6c5-280a-b5c3-7a69" name="Special Abilities">
+      <characteristicTypes>
+        <characteristicType id="d377-2906-f93b-0501" name="Ability"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
   <selectionEntries>
     <selectionEntry id="6035-fef6-891a-0281" name="Jarl" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -327,6 +334,8 @@
     <selectionEntry id="84f3-8914-8cf0-35f3" name="Scythe" publicationId="81de-2783-487c-43ea" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="892a-2cdf-3e96-c164" name="Scythe" hidden="false" targetId="45d7-628f-b835-667d" type="profile"/>
+        <infoLink id="8136-1449-bf7f-84fa" name="Savage" hidden="false" targetId="a59e-2eff-7849-1202" type="rule"/>
+        <infoLink id="7ee1-aac9-0ce0-d532" name="Cumbersome" hidden="false" targetId="2d86-2a11-c4ef-4c3e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Glory" typeId="075a-a276-09aa-163f" value="25.0"/>
@@ -343,6 +352,7 @@
     <selectionEntry id="43a1-5f08-455c-d7eb" name="Ulfbert" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9ab8-a2a3-2348-e383" name="Ulfbert" hidden="false" targetId="8d1f-de9c-9cca-c9c4" type="profile"/>
+        <infoLink id="eb5b-3d19-6b78-33bb" name="Lethal" hidden="false" targetId="5098-8c3e-0159-7ac0" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Glory" typeId="075a-a276-09aa-163f" value="65.0"/>
