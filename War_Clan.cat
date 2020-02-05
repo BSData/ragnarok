@@ -29,6 +29,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="0fa9-733c-9b49-30eb" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="a98f-260c-7382-75a4" name="Special Abilities" publicationId="81de-2783-487c-43ea" page="64" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Combat Sense, Tactician (12), Teamwork, Hip Shot, Weapon Master</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="613a-d28e-3587-9905" name="Teamwork" hidden="false" targetId="31db-f105-2801-65a2" type="rule"/>
             <infoLink id="ea91-c21c-ead3-11f4" name="Tactician (x)" hidden="false" targetId="7695-b6eb-a5d0-c739" type="rule"/>
@@ -97,6 +104,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="3873-eda6-2550-8456" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="594e-a07e-56c9-c56e" name="Special Abilities" publicationId="81de-2783-487c-43ea" page="65" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Brace, High Pain Threshold, Stalwart</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="b424-39ad-30af-f0fa" name="Brace" hidden="false" targetId="2af2-fcc1-e268-7ec2" type="rule"/>
             <infoLink id="32bc-4ab3-2550-0e97" name="High Pain Threshold" hidden="false" targetId="d981-3fd1-6501-abef" type="rule"/>
@@ -135,9 +149,17 @@
       </profiles>
       <infoGroups>
         <infoGroup id="edb7-07aa-2886-a636" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="2c01-1698-6bc7-f446" name="Special Abilities" publicationId="81de-2783-487c-43ea" page="65" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Berserker, Terrifying (1), Rapid Attack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="7e4c-b3ce-d275-b4d0" name="Berserker" hidden="false" targetId="6611-168d-e975-c7dd" type="rule"/>
             <infoLink id="55bc-1fd6-dc35-a44b" name="Terrifying (x)" hidden="false" targetId="6621-8c83-6bf5-b6a2" type="rule"/>
+            <infoLink id="5ae0-7c1f-132d-0b86" name="Rapid Attack" hidden="false" targetId="523c-2795-357f-d8c3" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
@@ -172,6 +194,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="3edc-8106-232e-b74c" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="d5c0-bc93-4601-6cb7" name="Special Abilities" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Tactician (6), Taunt (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="7bde-0eec-9f2a-6741" name="Tactician (x)" hidden="false" targetId="7695-b6eb-a5d0-c739" type="rule"/>
             <infoLink id="980a-ac87-9351-40ec" name="Taunt (x)" hidden="false" targetId="a7c1-d573-2813-748d" type="rule"/>
@@ -209,6 +238,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="b1c5-1c9b-a6f7-efc9" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="eda0-d536-0629-8d83" name="Special Abilities" publicationId="81de-2783-487c-43ea" page="66" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Healer (ML), Godspark Attuned</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="80ac-791c-5ebd-925b" name="Healer (x)" hidden="false" targetId="a955-d4b8-f661-e1ce" type="rule"/>
             <infoLink id="d3b4-abfe-5ed5-368d" name="Godspark Attuned" hidden="false" targetId="72d2-2fba-bb03-fae5" type="rule"/>
@@ -246,6 +282,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="ca9a-214e-2007-a733" name="Special Abilities" hidden="false">
+          <profiles>
+            <profile id="6416-d876-b889-df89" name="Special Abilities" publicationId="81de-2783-487c-43ea" page="67" hidden="false" typeId="84af-fef6-536c-30d5" typeName="Special Abilities">
+              <characteristics>
+                <characteristic name="Special Abilites" typeId="8fae-891e-a533-f212">Concealment, Stealth</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="bdf1-7926-f0da-e026" name="Concealment" hidden="false" targetId="4ce7-9686-36e4-2291" type="rule"/>
             <infoLink id="0752-f74b-9997-aa4d" name="Stealth" hidden="false" targetId="0046-e21c-3ce3-8b06" type="rule"/>

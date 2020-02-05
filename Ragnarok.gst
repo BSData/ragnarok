@@ -33,6 +33,11 @@
         <characteristicType id="3320-609d-d86d-a6c7" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="84af-fef6-536c-30d5" name="Special Abilities">
+      <characteristicTypes>
+        <characteristicType id="8fae-891e-a533-f212" name="Special Abilites"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="c641-ea3b-0cb3-a2a1" name="Jarl" hidden="false"/>
