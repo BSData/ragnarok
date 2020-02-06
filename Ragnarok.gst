@@ -45,6 +45,7 @@
     <categoryEntry id="9af4-83b0-a055-047f" name="Encounter Creatures" hidden="false"/>
     <categoryEntry id="c8fc-16f9-d080-a42f" name="Demimortals" hidden="false"/>
     <categoryEntry id="e432-0a79-0f40-69f8" name="Models" hidden="false"/>
+    <categoryEntry id="a890-e25c-8bf7-fdba" name="War Clan" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="07d9-2d46-85fd-2843" name="Warclan" publicationId="81de-2783-487c-43ea" hidden="false">
@@ -66,9 +67,67 @@
             <constraint field="selections" scope="07d9-2d46-85fd-2843" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a2d-ce16-cccd-c772" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="da6b-440f-024e-54c7" name="War Clan" hidden="false" targetId="a890-e25c-8bf7-fdba" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <entryLinks>
+    <entryLink id="b5aa-1aa8-96ed-5e85" name="War Clan" hidden="false" collective="false" import="true" targetId="f554-db20-1715-a145" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab7-4d90-b322-c9f4" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-9579-6661-87cf" type="max"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="6bae-be1b-c65f-0688" name="Campaign Mode" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbad-1621-1cdf-e80b" name="Glory" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f554-db20-1715-a145" name="War Clan" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f423-6676-d677-f5cf" name="War Clan" hidden="false" targetId="a890-e25c-8bf7-fdba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="602c-eede-4e20-b8aa" name="War Clan" hidden="false" collective="false" import="true" targetId="cb45-d962-2fef-a452" type="selectionEntryGroup">
+          <categoryLinks>
+            <categoryLink id="6d7d-d808-cb68-8f8e" name="War Clan" hidden="false" targetId="a890-e25c-8bf7-fdba" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="cb45-d962-2fef-a452" name="War Clan" hidden="false" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink id="e65b-cd31-36b9-6bb7" name="War Clan" hidden="false" targetId="a890-e25c-8bf7-fdba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1a16-b1bf-d52d-71e9" name="Campaign Mode" hidden="false" collective="false" import="true" targetId="6bae-be1b-c65f-0688" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="075a-a276-09aa-163f" value="-1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b83f-d11d-beaa-fea5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="075a-13e4-4b92-608d" name="Glory" hidden="false" collective="false" import="true" targetId="bbad-1621-1cdf-e80b" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ff54-0e83-544a-3c27" name="Absent-Minded" publicationId="81de-2783-487c-43ea" page="241" hidden="false">
       <description>Opponents may re-roll failed rolls versus MN against this model.</description>
