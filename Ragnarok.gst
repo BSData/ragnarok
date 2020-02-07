@@ -38,6 +38,27 @@
         <characteristicType id="8fae-891e-a533-f212" name="Special Abilites"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="fa41-accb-4931-079a" name="1 Godspark Cost">
+      <characteristicTypes>
+        <characteristicType id="9056-ca46-6069-03a7" name="Godspark Cost"/>
+        <characteristicType id="7a3d-7ab8-3d71-d5ca" name="Boost cost 1"/>
+        <characteristicType id="277b-c08e-e72e-0f29" name="Boost Effect 1"/>
+        <characteristicType id="e63c-d644-a3e2-372d" name="Boost Cost 2"/>
+        <characteristicType id="c1b5-d18d-d396-3673" name="Boost Effect 2"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="e5b3-4bef-5444-7494" name="2 Godspark rules">
+      <characteristicTypes>
+        <characteristicType id="acd1-01e1-b29b-1f9d" name="Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="c6d5-084b-f43a-dba6" name="3 Godspark Attack">
+      <characteristicTypes>
+        <characteristicType id="f6db-b6a3-21f5-eae4" name="ST"/>
+        <characteristicType id="bff9-76e9-6fad-6e17" name="RN"/>
+        <characteristicType id="da74-c664-9e4e-9ed9" name="Attack Abilities"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="c641-ea3b-0cb3-a2a1" name="Jarl" hidden="false"/>
@@ -46,6 +67,7 @@
     <categoryEntry id="c8fc-16f9-d080-a42f" name="Demimortals" hidden="false"/>
     <categoryEntry id="e432-0a79-0f40-69f8" name="Models" hidden="false"/>
     <categoryEntry id="a890-e25c-8bf7-fdba" name="War Clan" hidden="false"/>
+    <categoryEntry id="ab5f-bd95-c2e0-9dba" name="Godspark" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="07d9-2d46-85fd-2843" name="Warclan" publicationId="81de-2783-487c-43ea" hidden="false">
@@ -68,6 +90,18 @@
           </constraints>
         </categoryLink>
         <categoryLink id="da6b-440f-024e-54c7" name="War Clan" hidden="false" targetId="a890-e25c-8bf7-fdba" primary="false"/>
+        <categoryLink id="42b3-3bc9-7694-e1cb" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="false">
+          <modifiers>
+            <modifier type="set" field="93b5-20b0-ace4-f2e6" value="-1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6bae-be1b-c65f-0688" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93b5-20b0-ace4-f2e6" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -78,6 +112,72 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-9579-6661-87cf" type="max"/>
       </constraints>
     </entryLink>
+    <entryLink id="ba0c-4db4-6d63-92d2" name="11 Touch of Life" hidden="false" collective="false" import="true" targetId="05e5-449f-f89e-84c2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5ae9-3d04-8a0a-0444" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b166-f4ed-6a4b-0d8f" name="12 Engulfed by Sunlight" hidden="false" collective="false" import="true" targetId="e89b-a93d-761e-bc53" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ed8c-8e64-34ac-ed78" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee07-7eca-3ad2-383a" name="1.13 Rush of Purpose" hidden="false" collective="false" import="true" targetId="08f7-9ea8-325b-5f3a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="144a-9cfc-45fd-5cf6" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb6a-01f5-b730-62d6" name="1.14 Ward of Truth" hidden="false" collective="false" import="true" targetId="a4d4-b910-aa8e-5909" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8712-a616-af70-f9a3" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="13b7-ae25-3efe-cf65" name="1.15 Flash of Dawn" hidden="false" collective="false" import="true" targetId="3f6c-ea11-bb80-a2aa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="131d-9ba1-6b10-012b" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fb34-c4c5-2511-491d" name="1.16 Shackles of Judgement" hidden="false" collective="false" import="true" targetId="fda3-9605-2eb8-60f2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b39f-9823-9465-7df6" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a5ef-f93f-5d5c-6b13" name="1.21 Blessings of Nature" hidden="false" collective="false" import="true" targetId="c87e-4259-be61-f108" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d109-7b85-bdad-83c6" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee62-986c-3e4e-d906" name="1.22 Senses Beyond" hidden="false" collective="false" import="true" targetId="3e6f-b04e-7db8-c20b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="66ea-f199-58e6-f8ef" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bfa3-13f1-d218-ec83" name="1.23 Wise Queen&apos;s Foresight" hidden="false" collective="false" import="true" targetId="db82-6360-168f-1978" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e5e-3641-408c-2ef8" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="22eb-01c5-798e-c943" name="1.24 Walk on the Wind" hidden="false" collective="false" import="true" targetId="0cb9-8fe3-0966-4ae4" type="selectionEntry"/>
+    <entryLink id="ddc0-0a0a-caa3-5d27" name="1.25 Hold Fast; Stay Vigilant" hidden="false" collective="false" import="true" targetId="d999-b75e-7ca1-155e" type="selectionEntry"/>
+    <entryLink id="aac6-1d53-c71b-a418" name="1.26 Stride of 1000 Leagues" hidden="false" collective="false" import="true" targetId="521f-89d8-8173-17d7" type="selectionEntry"/>
+    <entryLink id="2de6-9d79-d1e3-c2d2" name="1.31 Winter&apos;s Bite" hidden="false" collective="false" import="true" targetId="c388-82ad-432c-5f17" type="selectionEntry"/>
+    <entryLink id="b4d8-4188-cbff-5546" name="1.32 Illusion of Intent" hidden="false" collective="false" import="true" targetId="d2a2-3eaf-ac00-0931" type="selectionEntry"/>
+    <entryLink id="41f7-6c70-f22d-1257" name="1.33 Dwell in Darkness" hidden="false" collective="false" import="true" targetId="fe98-b8a5-a873-db7b" type="selectionEntry"/>
+    <entryLink id="e03f-5404-fbc6-9717" name="1.34 Steel Your Mind" hidden="false" collective="false" import="true" targetId="bb67-7067-5902-7175" type="selectionEntry"/>
+    <entryLink id="9f64-bd0b-7712-7c05" name="1.35 Whispered Lies" hidden="false" collective="false" import="true" targetId="4775-002c-2fb7-5c2b" type="selectionEntry"/>
+    <entryLink id="158b-a780-e07d-7f14" name="1.36 Wanderlust" hidden="false" collective="false" import="true" targetId="9bf4-caca-2dc0-22f9" type="selectionEntry"/>
+    <entryLink id="d465-1e64-be33-89b2" name="1.41 Battle Dance" hidden="false" collective="false" import="true" targetId="5c0e-3cfb-332e-97b9" type="selectionEntry"/>
+    <entryLink id="c8b0-6e73-79d7-2b45" name="1.42 Struck by No Mortal" hidden="false" collective="false" import="true" targetId="72fa-92ea-9980-59d3" type="selectionEntry"/>
+    <entryLink id="1885-693c-738c-0a45" name="1.43 Frentic Blur of Blades" hidden="false" collective="false" import="true" targetId="2582-3296-1f9c-b49e" type="selectionEntry"/>
+    <entryLink id="55b7-8cb5-1d79-18f6" name="1.44 Thunder God&apos;s Temper" hidden="false" collective="false" import="true" targetId="b79b-72d3-8450-3f1e" type="selectionEntry"/>
+    <entryLink id="0129-0c8e-eb06-92fb" name="1.45 Cast Aside Harm" hidden="false" collective="false" import="true" targetId="6b08-15f7-0a92-c407" type="selectionEntry"/>
+    <entryLink id="a176-d893-abe0-fe6f" name="1.46 Thunderous Blows" hidden="false" collective="false" import="true" targetId="883b-d673-88fa-028e" type="selectionEntry"/>
+    <entryLink id="7e05-fcbe-0634-72cd" name="1.51 Split Mountains" hidden="false" collective="false" import="true" targetId="56e0-22f2-9450-c978" type="selectionEntry"/>
+    <entryLink id="46e7-aa25-3e6f-191b" name="1.52 War God&apos;s Prowess" hidden="false" collective="false" import="true" targetId="67cd-8eb3-cb13-c75f" type="selectionEntry"/>
+    <entryLink id="249b-0e36-3a83-50b2" name="1.53 Stand Aside" hidden="false" collective="false" import="true" targetId="5643-8a44-464d-2c3d" type="selectionEntry"/>
+    <entryLink id="60d3-ede4-ac7c-c1fb" name="1.54 Walk Atop the Snow" hidden="false" collective="false" import="true" targetId="32ae-afc5-ba35-e190" type="selectionEntry"/>
+    <entryLink id="cd3d-fe9f-d94f-51a2" name="1.55 Kneel and Know Your Place" hidden="false" collective="false" import="true" targetId="1d62-4d61-df5b-afb9" type="selectionEntry"/>
+    <entryLink id="6eee-cdbb-667c-c272" name="1.56 Fly True" hidden="false" collective="false" import="true" targetId="33fb-dfa7-535f-2075" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6bae-be1b-c65f-0688" name="Campaign Mode" hidden="false" collective="false" import="true" type="upgrade">
@@ -105,6 +205,643 @@
         <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="05e5-449f-f89e-84c2" name="1.11 Touch of Life" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="name" value="0.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup id="ddf4-c973-e733-32f0" name="Touch of Life" hidden="false">
+          <infoLinks>
+            <infoLink id="913b-a5e5-d3ae-8c5e" name="11 Touch of Life" hidden="false" targetId="653c-3d70-eee6-09ef" type="profile"/>
+            <infoLink id="87eb-0554-8f8c-d9fe" name="11 Touch of Life" hidden="false" targetId="a8ad-7f72-e484-c498" type="profile"/>
+            <infoLink id="c288-62b5-9d3d-053e" name="Touch of Life" hidden="false" targetId="3709-dff4-4217-093d" type="profile"/>
+            <infoLink id="b396-834d-2e35-5b00" name="Healer (x)" hidden="false" targetId="a955-d4b8-f661-e1ce" type="rule"/>
+            <infoLink id="de73-be25-c296-187e" name="Patch (x)" hidden="false" targetId="051d-5c6c-7c56-a7a5" type="rule"/>
+            <infoLink id="6731-25de-1fc2-6c19" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="ec9d-6a21-2fa9-53c1" name="11 Touch of Life" hidden="false" targetId="653c-3d70-eee6-09ef" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3010-fbc9-8128-7e6b" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="16c8-cc3c-924d-1d53" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e89b-a93d-761e-bc53" name="1.12 Engulfed by Sunlight" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="c13d-6222-c819-e53a" name="Engulfed by Sunlight" hidden="false">
+          <infoLinks>
+            <infoLink id="a94c-8dc8-6a17-6340" name="12 Engulfed in Sunlight" hidden="false" targetId="200c-e2bc-32d8-e45a" type="profile"/>
+            <infoLink id="f34e-5ccd-2d1c-f898" name="12 Engulfed by Sunlight" hidden="false" targetId="ecbc-0d5c-6818-4b2b" type="profile"/>
+            <infoLink id="f9c0-aac8-0a5c-a104" name="Immunity (x)" hidden="false" targetId="304d-8a20-0652-20b6" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="8efb-8a3f-164a-69d4" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="afae-7d6b-d88b-a7f0" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa95-c024-3569-18ec" name="Imprinted" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a94f-88d3-a9f2-33f3" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="08f7-9ea8-325b-5f3a" name="1.13 Rush of Purpose" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="f412-ae79-97be-ef19" name="Rush of Purpose" hidden="false">
+          <infoLinks>
+            <infoLink id="cd57-6586-92af-cf29" name="Rush of Purpose" hidden="false" targetId="7d44-4927-3ef3-f1cc" type="profile"/>
+            <infoLink id="4deb-451d-0150-60fa" name="Rush of Purpose" hidden="false" targetId="dea7-979e-9fee-ccd6" type="profile"/>
+            <infoLink id="5ec0-5b65-641d-f49b" name="Rush of Purpose" hidden="false" targetId="3af9-ce64-7873-2526" type="profile"/>
+            <infoLink id="2460-cafa-2355-757e" name="Aid (Stat) (x) - Status" hidden="false" targetId="647c-9c4a-e1be-8557" type="rule"/>
+            <infoLink id="3a20-dec4-77d1-52a2" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="b3f2-ab27-4f91-7107" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cff3-dc5e-29dd-8cfc" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a4d4-b910-aa8e-5909" name="1.14 Ward of Truth" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="9eff-104b-b448-c853" name="Ward of Truth" hidden="false">
+          <infoLinks>
+            <infoLink id="0118-6a4a-4d54-6d9a" name="Ward of Truth" hidden="false" targetId="01e0-164b-d8a5-4073" type="profile"/>
+            <infoLink id="ade3-9e77-56e9-433a" name="Ward of Truth" hidden="false" targetId="b5fc-e8d1-8c8d-572c" type="profile"/>
+            <infoLink id="2eac-0ea9-29fb-f785" name="Ward of Truth" hidden="false" targetId="4b31-08ee-e4ed-55e5" type="profile"/>
+            <infoLink id="c8cd-63cc-77e9-868f" name="Aid (Stat) (x) - Status" hidden="false" targetId="647c-9c4a-e1be-8557" type="rule"/>
+            <infoLink id="f70e-af73-427c-8fe3" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="8d6a-a756-9e5a-4280" name="Godspark" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b743-2a53-b43e-d83a" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f6c-ea11-bb80-a2aa" name="1.15 Flash of Dawn" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="7872-e36c-5243-aab5" name="Flash of Dawn" hidden="false">
+          <infoLinks>
+            <infoLink id="f8cd-fbf0-1ea0-536a" name="Flash of Dawn" hidden="false" targetId="d85a-dceb-3e7d-4f7a" type="profile"/>
+            <infoLink id="c973-6ad3-6590-5cb9" name="Flash of Dawn" hidden="false" targetId="5b7e-a27f-5d4e-f25f" type="profile"/>
+            <infoLink id="2e06-a621-542b-d6ba" name="Fire (x) - Status" hidden="false" targetId="ed31-6190-37b2-f899" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="2f6c-8732-012b-dd74" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e05a-6ee2-4f43-2152" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fda3-9605-2eb8-60f2" name="1.16 Shackles of Judgement" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="1cc2-5fee-8f7c-34bc" name="Shackles of Judgement" hidden="false">
+          <infoLinks>
+            <infoLink id="1b7e-c8d1-a329-2002" name="Shackles of Judgement" hidden="false" targetId="ccd1-33fe-65b8-be2c" type="profile"/>
+            <infoLink id="0d57-a6d4-01fd-9704" name="Shackles of Judgement" hidden="false" targetId="d238-8ee7-dd52-9c34" type="profile"/>
+            <infoLink id="3d6b-74ae-9fb0-9782" name="Shackles of Judgement" hidden="false" targetId="d8f5-2427-4b00-fa44" type="profile"/>
+            <infoLink id="3016-cea3-55dc-a16d" name="Drain (Stat) (x) - Status" hidden="false" targetId="35ce-e8ef-a331-0dd4" type="rule"/>
+            <infoLink id="dd93-6583-5a4f-d8c0" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="f448-74d9-22dd-0ba8" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0eb-c100-8b4a-49d9" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c87e-4259-be61-f108" name="1.21 Blessings of Nature" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="519d-6187-af7f-9e0d" name="Blessings of Nature" hidden="false">
+          <infoLinks>
+            <infoLink id="0ffb-4c7e-887f-716f" name="Blessings of Nature" hidden="false" targetId="1bc2-ad4a-fdc5-f725" type="profile"/>
+            <infoLink id="4d9b-8936-ea17-c4e1" name="Blessings of Nature" hidden="false" targetId="5b28-252a-a09a-995f" type="profile"/>
+            <infoLink id="35e5-05c1-33ed-c218" name="Leap" hidden="false" targetId="7b24-1e85-878c-6800" type="rule"/>
+            <infoLink id="78fc-f3b2-3840-2754" name="Stubborn" hidden="false" targetId="e8a7-065f-6479-924f" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="bf7f-4fed-9f5f-a9ec" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df6f-345c-ecb4-1d1a" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e6f-b04e-7db8-c20b" name="1.22 Senses Beyond" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="a80a-fe54-3c39-55cc" name="Senses Beyond" hidden="false">
+          <infoLinks>
+            <infoLink id="8ead-433a-5d86-65e8" name="Senses Beyond" hidden="false" targetId="f599-c038-59df-4468" type="profile"/>
+            <infoLink id="bf77-523b-34a0-a00d" name="Senses Beyond" hidden="false" targetId="9f9e-6ae4-36e7-3aff" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="252b-51f3-f561-7399" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bdc2-9cf2-f332-5a20" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db82-6360-168f-1978" name="1.23 Wise Queen&apos;s Foresight" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="1c41-18b1-7276-eca9" name="Wise Queen&apos;s Foresight" hidden="false">
+          <infoLinks>
+            <infoLink id="3cbb-fa6a-fcb0-3222" name="Wise Queen&apos;s Foresight" hidden="false" targetId="1afa-419f-0b31-767c" type="profile"/>
+            <infoLink id="9681-e0e6-7c53-ef20" name="Wise Queen&apos;s Foresight" hidden="false" targetId="f082-9433-ec54-ebb2" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="833d-5b57-6ca1-de11" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a85c-416f-f5ca-9ad5" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0cb9-8fe3-0966-4ae4" name="1.24 Walk on the Wind" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="2bc8-edae-3ee8-d7a3" name="Walk on the Wind" hidden="false">
+          <infoLinks>
+            <infoLink id="8f75-5974-930b-bca5" name="Walk on the Wind" hidden="false" targetId="2ae1-2fa0-5c50-2264" type="profile"/>
+            <infoLink id="a1c4-f38d-fd71-8e38" name="Walk on the Wind" hidden="false" targetId="3f6f-7289-82d7-fb8c" type="profile"/>
+            <infoLink id="eecf-486b-4abd-db50" name="Flight (x)" hidden="false" targetId="14f9-d2cb-3c7a-41c0" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="3796-a863-5d57-e822" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b099-8aa4-36be-ecbb" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d999-b75e-7ca1-155e" name="1.25 Hold Fast; Stay Vigilant" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="982e-0361-6a81-e797" name="Hold Fast; Stay Vigilant" hidden="false">
+          <infoLinks>
+            <infoLink id="7631-e656-2dc5-d52d" name="Hold Fast; Stay Vigilant" hidden="false" targetId="3d99-3970-1217-7411" type="profile"/>
+            <infoLink id="48a4-489e-56f4-d125" name="Hold Fast; Stay Vigilant" hidden="false" targetId="440c-e893-0ad3-0aff" type="profile"/>
+            <infoLink id="f53f-58c9-0fe0-ad80" name="Aware" hidden="false" targetId="43c8-6250-4c30-1c67" type="rule"/>
+            <infoLink id="395b-847b-6484-ff61" name="Restrain (x)" hidden="false" targetId="b3cf-fb39-1fc1-256d" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="2376-6c29-c6c1-8221" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e2da-89ad-0e76-9f06" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="521f-89d8-8173-17d7" name="1.26 Stride of 1000 Leagues" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="fd87-d418-bda2-863b" name="Stride of 1000 Leagues" hidden="false">
+          <infoLinks>
+            <infoLink id="758f-08df-4faf-9afd" name="Stride of 1000 Leagues" hidden="false" targetId="1714-be04-ecec-fefa" type="profile"/>
+            <infoLink id="a3c3-c6e2-7c23-8844" name="Stride of 1000 Leagues" hidden="false" targetId="0e5b-0b2e-94ff-ff58" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="1b74-d338-c172-fb9c" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6182-db75-6a51-2bf4" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c388-82ad-432c-5f17" name="1.31 Winter&apos;s Bite" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="ef58-bf62-8ca6-42b3" name="Winter&apos;s Bite" hidden="false">
+          <infoLinks>
+            <infoLink id="8507-91ee-301b-145a" name="Bite of Winter" hidden="false" targetId="40c7-fd92-d5a5-993d" type="profile"/>
+            <infoLink id="da17-9b3c-48f6-7924" name="Bite of Winter" hidden="false" targetId="613b-af40-837a-1712" type="profile"/>
+            <infoLink id="f70e-22f9-3de6-9283" name="Ice (x) - Status" hidden="false" targetId="d13b-ae06-c443-f674" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="bb9f-835f-8c49-c8f3" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="42bb-bf41-6df7-7be7" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2a2-3eaf-ac00-0931" name="1.32 Illusion of Intent" publicationId="81de-2783-487c-43ea" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="9814-a2bf-579b-b6ab" name="Illusion of Intent" hidden="false">
+          <infoLinks>
+            <infoLink id="2036-8c1a-ad94-ef96" name="Illusion of Intent" hidden="false" targetId="287b-8d22-0b47-663b" type="profile"/>
+            <infoLink id="4678-fe3f-14f4-4e19" name="Illusion of Intent" hidden="false" targetId="cd46-7c02-7d9f-c6e6" type="profile"/>
+            <infoLink id="69ae-a6ab-cf93-5444" name="Deceptive" hidden="false" targetId="c385-f91f-4132-8a05" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="b79d-68d6-2d2d-4044" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="33c3-b945-94ac-1841" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe98-b8a5-a873-db7b" name="1.33 Dwell in Darkness" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="1904-9792-421f-5751" name="Dwell in Darkness" hidden="false">
+          <infoLinks>
+            <infoLink id="6317-0605-296a-9f18" name="Dwell in Darkness" hidden="false" targetId="ff7d-7d7d-9cbd-b45d" type="profile"/>
+            <infoLink id="89ad-f735-6370-fbc4" name="Dwell in Darkness" hidden="false" targetId="ffd8-b774-bc97-664b" type="profile"/>
+            <infoLink id="d306-8613-5079-f6e3" name="Dwell in Darkness" hidden="false" targetId="ee26-c61d-1dca-9a68" type="profile"/>
+            <infoLink id="3bc0-c40c-cc06-81e7" name="Blind (x) - Status" hidden="false" targetId="3123-ad42-0015-1e77" type="rule"/>
+            <infoLink id="fa78-8781-b338-6e32" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="26d2-8480-e0f7-a26c" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4932-b873-a155-909c" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb67-7067-5902-7175" name="1.34 Steel Your Mind" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="89d8-c548-53d6-6bdd" name="Steel Your Mind" hidden="false">
+          <infoLinks>
+            <infoLink id="e697-a93f-b038-9d59" name="Steel Your Mind" hidden="false" targetId="7147-9b21-9fc0-1978" type="profile"/>
+            <infoLink id="f26a-e628-2e11-8c0c" name="Stand Aside" hidden="false" targetId="e8df-b31f-ed86-d6fb" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7cdf-7a27-e021-e217" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8ac0-910a-077a-98c2" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4775-002c-2fb7-5c2b" name="1.35 Whispered Lies" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="ae4e-2690-aa43-ac12" name="Whispered Lies" hidden="false">
+          <infoLinks>
+            <infoLink id="794b-bff5-b1b6-f5ab" name="Whispered Lies" hidden="false" targetId="4a51-3adf-0459-e48c" type="profile"/>
+            <infoLink id="6f00-106f-ce41-fe4a" name="Whispered Lies" hidden="false" targetId="f60f-77fc-1e26-5bff" type="profile"/>
+            <infoLink id="4574-162d-61c6-f4cf" name="Whispered Lies" hidden="false" targetId="9203-5e2e-b158-4250" type="profile"/>
+            <infoLink id="ef94-af28-6d49-ca73" name="Psi" hidden="false" targetId="6b5f-736a-15c3-7134" type="rule"/>
+            <infoLink id="42e9-8dba-232e-5c1e" name="Delusional" hidden="false" targetId="0a94-66c2-d651-926a" type="rule"/>
+            <infoLink id="4b56-fba9-78c6-7ba1" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="d71c-d0ea-5028-200e" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f3be-2796-442b-01a6" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9bf4-caca-2dc0-22f9" name="1.36 Wanderlust" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="9cf5-f5e5-de71-fb13" name="Wanderlust" hidden="false">
+          <infoLinks>
+            <infoLink id="a558-defb-1c51-4d25" name="Wanderlust" hidden="false" targetId="4962-7bb2-41f8-04c9" type="profile"/>
+            <infoLink id="3eba-804f-ae8d-28a2" name="Wanderlust" hidden="false" targetId="7fe4-a5b3-b033-7487" type="profile"/>
+            <infoLink id="50a3-8586-fcef-62c7" name="Teleport (x)" hidden="false" targetId="c1a3-3618-ed4b-646a" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="07c5-3336-93b9-c150" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7c9c-c0db-61d3-5018" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c0e-3cfb-332e-97b9" name="1.41 Battle Dance" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="6ad4-219a-f511-2722" name="Battle Dance" hidden="false">
+          <infoLinks>
+            <infoLink id="cc2e-7bd2-4056-6fa3" name="Battle Dance" hidden="false" targetId="f3fa-f0ee-8dce-4b45" type="profile"/>
+            <infoLink id="a65e-8c3b-bc7d-e57c" name="Battle Dance" hidden="false" targetId="8755-cceb-156e-990b" type="profile"/>
+            <infoLink id="1e60-cf35-88ce-089f" name="Bullrush" hidden="false" targetId="4597-65a9-b43f-293d" type="rule"/>
+            <infoLink id="84a7-5e03-a024-67bd" name="Heavy Charge" hidden="false" targetId="2dd1-8d1b-7418-7532" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="5006-7f08-8e17-589c" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e07b-5906-1b42-fa87" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72fa-92ea-9980-59d3" name="1.42 Struck by No Mortal" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="80b8-35fa-6c31-5d9e" name="Struck by No Mortal" hidden="false">
+          <infoLinks>
+            <infoLink id="5438-8ce9-ce68-a504" name="Struck by No Mortal" hidden="false" targetId="2e5e-57d7-96e4-5598" type="profile"/>
+            <infoLink id="a488-0d0d-0eb2-49a8" name="Struck by No Mortal" hidden="false" targetId="85c1-44fc-0860-6019" type="profile"/>
+            <infoLink id="d4f9-a497-7d52-4bf5" name="Struck by No Mortal" hidden="false" targetId="42bd-ae12-02cc-bf8b" type="profile"/>
+            <infoLink id="5d36-b97d-5d24-b3e3" name="Aid (Stat) (x) - Status" hidden="false" targetId="647c-9c4a-e1be-8557" type="rule"/>
+            <infoLink id="63a4-c77f-862c-e74e" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="0a26-2246-d84b-5a74" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2cd0-35fb-7e10-511d" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2582-3296-1f9c-b49e" name="1.43 Frentic Blur of Blades" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="4e47-efbf-c06d-1dc8" name="Frentic Blur of Blades" hidden="false">
+          <infoLinks>
+            <infoLink id="3c6a-12c6-0484-aea1" name="Frentic Blur of Blades" hidden="false" targetId="7d92-b162-a0ab-816b" type="profile"/>
+            <infoLink id="031e-01f7-074e-704f" name="Frentic Blue of Blades" hidden="false" targetId="f273-65d3-134b-b277" type="profile"/>
+            <infoLink id="4f37-f467-074c-c3d0" name="Melee Arc" hidden="false" targetId="7cb7-44ca-92de-f094" type="rule"/>
+            <infoLink id="b07f-3c44-8eb4-11ed" name="Rapid Attack" hidden="false" targetId="523c-2795-357f-d8c3" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="9d68-1280-5910-b7ce" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2bf3-0709-3b75-ef29" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b79b-72d3-8450-3f1e" name="1.44 Thunder God&apos;s Temper" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="0b6f-ba48-a4c3-b660" name="Thunder God&apos;s Temper" hidden="false">
+          <infoLinks>
+            <infoLink id="6319-b123-97fa-10fb" name="Thunder God&apos;s Temper" hidden="false" targetId="cd5e-2302-a8ff-ad67" type="profile"/>
+            <infoLink id="7414-7907-2cdb-0a3f" name="Thunder God&apos;s Temper" hidden="false" targetId="0eba-ed81-b3c4-8014" type="profile"/>
+            <infoLink id="a17c-ff92-f6ad-6c21" name="Thunder God&apos;s Temper" hidden="false" targetId="18f5-fcd3-3687-2073" type="profile"/>
+            <infoLink id="1c5e-5384-a1d0-0a64" name="Grapple" hidden="false" targetId="a796-e684-c8e0-86fd" type="rule"/>
+            <infoLink id="b124-f058-2394-904e" name="Pull (x)" hidden="false" targetId="03c7-2834-ef37-ec43" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="f57a-aa55-2a95-08ec" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d89f-adbc-5640-df34" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6b08-15f7-0a92-c407" name="1.45 Cast Aside Harm" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="e022-2564-6997-bd72" name="Cast Aside Harm" hidden="false">
+          <infoLinks>
+            <infoLink id="5542-65a7-6c51-7a01" name="Cast Aside Harm" hidden="false" targetId="a87c-c79a-6dd4-025b" type="profile"/>
+            <infoLink id="0a13-29db-18dd-074e" name="Cast Aside Harm" hidden="false" targetId="b3aa-7396-4ea8-b38d" type="profile"/>
+            <infoLink id="e6e7-e424-342b-f450" name="Deflection (x)" hidden="false" targetId="c4b8-2d05-1e16-8e6c" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="5f7c-da55-3b78-e719" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0206-1335-ff87-e77d" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="883b-d673-88fa-028e" name="1.46 Thunderous Blows" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="459a-1a53-cbc6-1ce9" name="Thunderous Blows" hidden="false">
+          <infoLinks>
+            <infoLink id="c127-3ce9-f156-a16c" name="Thunderous Blows" hidden="false" targetId="f275-da34-2aff-93bc" type="profile"/>
+            <infoLink id="a12c-571a-b267-02b2" name="Thunderous Blows" hidden="false" targetId="20b1-485a-ed2c-6dfd" type="profile"/>
+            <infoLink id="a270-7945-1303-8db3" name="Shock (x) - Status" hidden="false" targetId="40cc-e90b-0690-9024" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="1ef0-661c-a29d-713e" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aac7-bbea-b792-d98c" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="56e0-22f2-9450-c978" name="1.51 Split Mountains" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="2508-d7ad-f62a-86cb" name="Split Mountains" hidden="false">
+          <infoLinks>
+            <infoLink id="4669-a13f-e69e-6610" name="Split Mountains" hidden="false" targetId="b4c7-fc91-ff18-0576" type="profile"/>
+            <infoLink id="27f7-daeb-af9d-b13a" name="Split Mountains" hidden="false" targetId="081c-49cd-ae2c-2e11" type="profile"/>
+            <infoLink id="31bd-0058-b878-15f7" name="Split Mountains" hidden="false" targetId="6e4c-cdba-2885-fff4" type="profile"/>
+            <infoLink id="5908-dccc-f3a9-590d" name="Aid (Stat) (x) - Status" hidden="false" targetId="647c-9c4a-e1be-8557" type="rule"/>
+            <infoLink id="dc18-c905-479e-c6a4" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="4535-59fb-2fc3-bc91" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="15a3-e38b-45f8-0d71" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67cd-8eb3-cb13-c75f" name="1.52 War God&apos;s Prowess" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="0400-27a3-fe25-7dda" name="War God&apos;s Prowess" hidden="false">
+          <infoLinks>
+            <infoLink id="2054-0164-2226-7894" name="War God&apos;s Prowess" hidden="false" targetId="1326-1183-00e4-5cb4" type="profile"/>
+            <infoLink id="db2b-4dff-3c81-8d85" name="War God&apos;s Prowess" hidden="false" targetId="0fcf-55fd-638d-da28" type="profile"/>
+            <infoLink id="3e97-37e7-d0c1-ceb8" name="Weapon Master" hidden="false" targetId="6ae1-ab6f-cfb6-b735" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="5646-8079-5cf8-1fd4" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5651-6819-a9a6-49bc" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5643-8a44-464d-2c3d" name="1.53 Stand Aside" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="c7af-dbb2-0a8b-66ca" name="Stand Aside" hidden="false">
+          <infoLinks>
+            <infoLink id="f832-5e25-8189-e807" name="Stand Aside" hidden="false" targetId="4baf-17dc-7a15-69ab" type="profile"/>
+            <infoLink id="d510-dcb0-938a-4299" name="Stand Aside" hidden="false" targetId="e8df-b31f-ed86-d6fb" type="profile"/>
+            <infoLink id="d456-7e48-0e70-df77" name="Push (x)" hidden="false" targetId="8747-0f30-8da2-fda5" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="0de1-6263-674d-dcd9" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7824-0503-9956-29ba" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="32ae-afc5-ba35-e190" name="1.54 Walk Atop the Snow" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="9f97-4dee-ed70-dd12" name="Walk Atop the Snow" hidden="false">
+          <infoLinks>
+            <infoLink id="7d98-7139-be50-ff1e" name="Walk Atop the Snow" hidden="false" targetId="c1d9-099d-0459-7c5e" type="profile"/>
+            <infoLink id="3fff-b4ce-a17a-24b4" name="Walk Atop the Snow" hidden="false" targetId="38ae-eb9a-c8aa-787b" type="profile"/>
+            <infoLink id="227f-fd48-9f86-9f2e" name="Acrobatics" hidden="false" targetId="715a-77e9-7a72-9392" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="2869-4758-ff72-a955" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ea29-8437-f6de-f551" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d62-4d61-df5b-afb9" name="1.55 Kneel and Know Your Place" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="c741-76f4-9e20-b18b" name="Kneel and Know Your Place" hidden="false">
+          <infoLinks>
+            <infoLink id="b8ef-4634-e94f-0561" name="Kneel and Know Your Place" hidden="false" targetId="3483-fd70-b636-2676" type="profile"/>
+            <infoLink id="1e36-ec4b-f360-c63b" name="Kneel and Know Your Place" hidden="false" targetId="610e-4eda-4564-323f" type="profile"/>
+            <infoLink id="a76e-0c42-4da4-971c" name="Kneel and Know Your Place" hidden="false" targetId="e4c8-4d2a-8f00-d9e9" type="profile"/>
+            <infoLink id="8c21-1670-4530-ff99" name="Knockdown (x)" hidden="false" targetId="bbab-c94e-971d-56d0" type="rule"/>
+            <infoLink id="fc09-6d7f-c556-cb45" name="Psi" hidden="false" targetId="6b5f-736a-15c3-7134" type="rule"/>
+            <infoLink id="e767-5597-57af-6dda" name="Point Blank" hidden="false" targetId="c962-de9e-547f-a3ff" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="6b04-bff3-b512-fd27" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b6f8-e944-3c24-8283" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33fb-dfa7-535f-2075" name="1.56 Fly True" publicationId="81de-2783-487c-43ea" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <infoGroups>
+        <infoGroup id="ea60-92e7-ed8e-8e2d" name="Fly True" hidden="false">
+          <infoLinks>
+            <infoLink id="265d-e595-82de-ef8e" name="Fly True" hidden="false" targetId="70a1-a3e1-65ad-2002" type="profile"/>
+            <infoLink id="7a3f-4bf6-fcde-4bef" name="Fly True" hidden="false" targetId="e2e2-e096-5bff-6e45" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="46da-7e06-fa1b-d99a" name="New CategoryLink" hidden="false" targetId="ab5f-bd95-c2e0-9dba" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d5d8-44f0-05e5-a9e9" name="Imprinted" hidden="false" collective="false" import="true" targetId="aa95-c024-3569-18ec" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Glory" typeId="075a-a276-09aa-163f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cb45-d962-2fef-a452" name="War Clan" hidden="false" collective="false" import="true">
@@ -113,13 +850,6 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="1a16-b1bf-d52d-71e9" name="Campaign Mode" hidden="false" collective="false" import="true" targetId="6bae-be1b-c65f-0688" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="075a-a276-09aa-163f" value="-1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b83f-d11d-beaa-fea5" type="max"/>
           </constraints>
@@ -453,6 +1183,498 @@
         <characteristic name="ST" typeId="7f10-f6bc-3efd-7fdf">2</characteristic>
         <characteristic name="RN" typeId="eac7-e9b7-f73e-ebc5">MR</characteristic>
         <characteristic name="Special" typeId="4770-6949-e712-44a3"/>
+      </characteristics>
+    </profile>
+    <profile id="653c-3d70-eee6-09ef" name="Touch of Life" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">8</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="200c-e2bc-32d8-e45a" name="Engulfed in Sunlight" publicationId="81de-2783-487c-43ea" page="83" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="a8ad-7f72-e484-c498" name="Touch of Life" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3709-dff4-4217-093d" name="Touch of Life" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">12</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Healer, Patch, Point Blank, Self</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ecbc-0d5c-6818-4b2b" name="Engulfed in Sunlight" publicationId="81de-2783-487c-43ea" page="83" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While Engulfed by Sunlight is active, the Warrior using this ability has Immunity to Ice and Fire effects and Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d44-4927-3ef3-f1cc" name="Rush of Purpose" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional DR</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dea7-979e-9fee-ccd6" name="Rush of Purpose" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3af9-ce64-7873-2526" name="Rush of Purpose" publicationId="81de-2783-487c-43ea" page="82" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Aid (DR) (1), Point Blank, Self</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="01e0-164b-d8a5-4073" name="Ward of Truth" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional RS</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b5fc-e8d1-8c8d-572c" name="Ward of Truth" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b31-08ee-e4ed-55e5" name="Ward of Truth" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Aid (RS)(1), Point Blank, Self</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d85a-dceb-3e7d-4f7a" name="Flash of Dawn" publicationId="81de-2783-487c-43ea" page="83" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Fire</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="5b7e-a27f-5d4e-f25f" name="Flash of Dawn" publicationId="81de-2783-487c-43ea" page="83" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Apply Fire (0) to your next Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ccd1-33fe-65b8-be2c" name="Shackles of Judgement" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional RS</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d238-8ee7-dd52-9c34" name="Shackles of Judgement" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d8f5-2427-4b00-fa44" name="Shackles of Judgement" publicationId="81de-2783-487c-43ea" page="84" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Drain (RS)(1), Point Blank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1bc2-ad4a-fdc5-f725" name="Blessings of Nature" publicationId="81de-2783-487c-43ea" page="85" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="5b28-252a-a09a-995f" name="Blessings of Nature" publicationId="81de-2783-487c-43ea" page="85" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior receives +1 DF, +1 MN, and +1 ST to all Attacks versus any Animal model on the battlefield, is Stubborn against all Animal Attacks, and has the Special Ability Leap</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1afa-419f-0b31-767c" name="Wise Queen&apos;s Foresight" publicationId="81de-2783-487c-43ea" page="85" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="f082-9433-ec54-ebb2" name="Wise Queen&apos;s Foresight" publicationId="81de-2783-487c-43ea" page="85" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this power is active your Warrior can cause one enemy to re-roll one successful roll of any kind and keep the second result.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3d99-3970-1217-7411" name="Hold Fast; Stay Vigilant" publicationId="81de-2783-487c-43ea" page="86" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Restrain</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="440c-e893-0ad3-0aff" name="Hold Fast; Stay Vigilant" publicationId="81de-2783-487c-43ea" page="86" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the Special Ability Aware and the Attack Ability Restrain (0) to all Melee Attacks</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f599-c038-59df-4468" name="Senses Beyond" publicationId="81de-2783-487c-43ea" page="86" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="9f9e-6ae4-36e7-3aff" name="Senses Beyond" publicationId="81de-2783-487c-43ea" page="86" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this Power is active your Warrior has LOS to everyone on the battlefield (however Terrain Elements taller than your warrior still block LOS for Ranged Attacks). Further, your Warrior gives enemies who have the Special Abilities Concealment and Invisibility a Spotted counter while this Power is Active.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2ae1-2fa0-5c50-2264" name="Walk on the Wind" publicationId="81de-2783-487c-43ea" page="89" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">8</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Flight SP</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="3f6f-7289-82d7-fb8c" name="Walk on the Wind" publicationId="81de-2783-487c-43ea" page="89" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains Flight (4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1714-be04-ecec-fefa" name="Stride of 1000 Leagues" publicationId="81de-2783-487c-43ea" page="89" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="0e5b-0b2e-94ff-ff58" name="Stride of 1000 Leagues" publicationId="81de-2783-487c-43ea" page="89" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this Power is active your Warrior gains +5 to their SP</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="40c7-fd92-d5a5-993d" name="Bite of Winter" publicationId="81de-2783-487c-43ea" page="90" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Ice</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="613b-af40-837a-1712" name="Bite of Winter" publicationId="81de-2783-487c-43ea" page="90" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Apple Ice (0) to your Warrior&apos;s next Melee Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ff7d-7d7d-9cbd-b45d" name="Dwell in Darkness" publicationId="81de-2783-487c-43ea" page="90" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">9</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional Blind</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ffd8-b774-bc97-664b" name="Dwell in Darkness" publicationId="81de-2783-487c-43ea" page="90" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee26-c61d-1dca-9a68" name="Dwell in Darkness" publicationId="81de-2783-487c-43ea" page="90" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Spray (3), Blind (0), Point Blank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a51-3adf-0459-e48c" name="Whispered Lies" publicationId="81de-2783-487c-43ea" page="91" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">8</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="f60f-77fc-1e26-5bff" name="Whispered Lies" publicationId="81de-2783-487c-43ea" page="91" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gainst the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9203-5e2e-b158-4250" name="Whispered Lies" publicationId="81de-2783-487c-43ea" page="91" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Psi, Spray (2), Point Blank, Victim gets Delusional</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="287b-8d22-0b47-663b" name="Illusion of Intent" publicationId="81de-2783-487c-43ea" page="91" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="cd46-7c02-7d9f-c6e6" name="Illusion of Intent" publicationId="81de-2783-487c-43ea" page="91" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">All Attacks this Warrior performs gain the Special Ability Deceptive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7147-9b21-9fc0-1978" name="Steel Your Mind" publicationId="81de-2783-487c-43ea" page="92" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="a594-2386-7276-a172" name="Steel Your Mind" publicationId="81de-2783-487c-43ea" page="92" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">May re-roll and failed DR or MN tests and have Immunity to the Special Abilities Terrifying and Delusional while this Power is Active</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4962-7bb2-41f8-04c9" name="Wanderlust" publicationId="81de-2783-487c-43ea" page="92" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Teleport SP</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="7fe4-a5b3-b033-7487" name="Wanderlust" publicationId="81de-2783-487c-43ea" page="92" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Using this Power grants your Warrior the Special Ability Teleport (4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3fa-f0ee-8dce-4b45" name="Battle Dance" publicationId="81de-2783-487c-43ea" page="93" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="8755-cceb-156e-990b" name="Battle Dance" publicationId="81de-2783-487c-43ea" page="93" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">The use of this Power grants your Warrior the Special Abilities Bullrush and Heavy Charge</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d92-b162-a0ab-816b" name="Frentic Blur of Blades" publicationId="81de-2783-487c-43ea" page="93" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="f273-65d3-134b-b277" name="Frentic Blue of Blades" publicationId="81de-2783-487c-43ea" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this Power is active, your Warrior gains the Attack Abilities Melee Arc and Rapid Attack to all Melee Attacks. If your Warrior already possesses Rapid Attack they gain +1 MA during the Rapid Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a87c-c79a-6dd4-025b" name="Cast Aside Harm" publicationId="81de-2783-487c-43ea" page="94" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Deflection</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="b3aa-7396-4ea8-b38d" name="Cast Aside Harm" publicationId="81de-2783-487c-43ea" page="94" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Use of this Power grants your Warrior the Special Ability Deflection</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e5e-57d7-96e4-5598" name="Struck by No Mortal" publicationId="81de-2783-487c-43ea" page="94" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional DF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="85c1-44fc-0860-6019" name="Struck by No Mortal" publicationId="81de-2783-487c-43ea" page="94" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="42bd-ae12-02cc-bf8b" name="Struck by No Mortal" publicationId="81de-2783-487c-43ea" page="94" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Aid (DF)(1), Point Blank, Self</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd5e-2302-a8ff-ad67" name="Thunder God&apos;s Temper" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional Pull</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0eba-ed81-b3c4-8014" name="Thunder God&apos;s Temper" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this Power is active, your Warrior gains the Special Ability Grapple and the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="18f5-fcd3-3687-2073" name="Thunder God&apos;s Temper" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">12</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Pull (1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f275-da34-2aff-93bc" name="Thunderous Blows" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Shock</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="20b1-485a-ed2c-6dfd" name="Thunderous Blows" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Apply the Attack Ability Shock (0) to all Attacks made by your Warrior</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b4c7-fc91-ff18-0576" name="Split Mountains" publicationId="81de-2783-487c-43ea" page="97" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional ST</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="081c-49cd-ae2c-2e11" name="Split Mountains" publicationId="81de-2783-487c-43ea" page="97" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following attack.
+
+If you roll a natural 2 while your Warrior is using this Power with a non-magical or legendary weapon, that weapon is destroyed</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e4c-cdba-2885-fff4" name="Split Mountains" publicationId="81de-2783-487c-43ea" page="97" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">18</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Aid (ST)(1) to Melee Attacks, Point Blank, Self</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4baf-17dc-7a15-69ab" name="Stand Aside" publicationId="81de-2783-487c-43ea" page="97" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">+1 additional Push</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="e8df-b31f-ed86-d6fb" name="Stand Aside" publicationId="81de-2783-487c-43ea" page="97" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Any Melee Attack your Warrior makes while this Power is in effect gains the Special Ability Push (0)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3483-fd70-b636-2676" name="Kneel and Know Your Place" publicationId="81de-2783-487c-43ea" page="98" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">9</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca">+1</characteristic>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29">RN +6</characteristic>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d">+1</characteristic>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673">+1 additional Knockdown</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="610e-4eda-4564-323f" name="Kneel and Know Your Place" publicationId="81de-2783-487c-43ea" page="98" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">Your Warrior gains the following Attack</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e4c8-4d2a-8f00-d9e9" name="Kneel and Know Your Place" publicationId="81de-2783-487c-43ea" page="98" hidden="false" typeId="c6d5-084b-f43a-dba6" typeName="3 Godspark Attack">
+      <characteristics>
+        <characteristic name="ST" typeId="f6db-b6a3-21f5-eae4"/>
+        <characteristic name="RN" typeId="bff9-76e9-6fad-6e17">36</characteristic>
+        <characteristic name="Attack Abilities" typeId="da74-c664-9e4e-9ed9">Psi, Knockdown (0), Point Blank</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1326-1183-00e4-5cb4" name="War God&apos;s Prowess" publicationId="81de-2783-487c-43ea" page="98" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="0fcf-55fd-638d-da28" name="War God&apos;s Prowess" publicationId="81de-2783-487c-43ea" page="96" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">The Warrior who uses this ability may re-roll one miss in Melee Combat while this Power is active. This Power can be combined with the Special Ability Weapon Master</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c1d9-099d-0459-7c5e" name="Walk Atop the Snow" publicationId="81de-2783-487c-43ea" page="99" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">6</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="38ae-eb9a-c8aa-787b" name="Walk Atop the Snow" publicationId="81de-2783-487c-43ea" page="99" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While this Power is in effect, your Warrior does not suffer SP penalties for moving through Difficult terrain and gains the Special Ability Acrobatics</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70a1-a3e1-65ad-2002" name="Fly True" publicationId="81de-2783-487c-43ea" page="99" hidden="false" typeId="fa41-accb-4931-079a" typeName="1 Godspark Cost">
+      <characteristics>
+        <characteristic name="Godspark Cost" typeId="9056-ca46-6069-03a7">7</characteristic>
+        <characteristic name="Boost cost 1" typeId="7a3d-7ab8-3d71-d5ca"/>
+        <characteristic name="Boost Effect 1" typeId="277b-c08e-e72e-0f29"/>
+        <characteristic name="Boost Cost 2" typeId="e63c-d644-a3e2-372d"/>
+        <characteristic name="Boost Effect 2" typeId="c1b5-d18d-d396-3673"/>
+      </characteristics>
+    </profile>
+    <profile id="e2e2-e096-5bff-6e45" name="Fly True" publicationId="81de-2783-487c-43ea" page="99" hidden="false" typeId="e5b3-4bef-5444-7494" typeName="2 Godspark rules">
+      <characteristics>
+        <characteristic name="Rules" typeId="acd1-01e1-b29b-1f9d">While in use, this Power increases your Warrior&apos;s range for all standard Ranged Attacks to 30, and grants all standard Ranged Attacks the ability of a Line Attack</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
